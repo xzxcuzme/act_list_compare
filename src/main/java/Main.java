@@ -54,10 +54,10 @@ public class Main {
             Files.copy(source.toPath(), dest.toPath());
 
             //удаление файла исходника
-            if (source.delete()){
-                System.out.println("source файл был удален");
-            }
-            else System.out.println("Файл source не был найден");
+//            if (source.delete()){
+//                System.out.println("source файл был удален");
+//            }
+//            else System.out.println("Файл source не был найден");
         }
     }
 
@@ -165,11 +165,11 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        File dir = new File("C:\\Users\\Ilya\\IdeaProjects\\act_list_compare\\input_date\\"); //path указывает на директорию
+        File dir = new File("C:\\Users\\Ilya\\IdeaProjects\\act_list_compare\\input_date\\");
         processFilesFromFolder(dir); //копирования файлов из директорий
         System.out.println("act copy complete");
 
-        File dirClients = new File("C:\\Users\\Ilya\\IdeaProjects\\act_list_compare\\xls\\"); //path указывает на директорию
+        File dirClients = new File("C:\\Users\\Ilya\\IdeaProjects\\act_list_compare\\xls\\");
         processFilesFromFolderClients(dirClients);
 
     }
